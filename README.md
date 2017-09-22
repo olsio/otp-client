@@ -1,7 +1,5 @@
 # otp-client
 
-[![Build Status][travis-image]][travis-url]
-
 otp-client is a JavaScript library for creating OTP tokens for easy use in OTP clients.
 
 The library can be used with react-native and expo.io without native crypto libraries.
