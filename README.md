@@ -1,6 +1,6 @@
 # otp-client
 
-[![Build Status][https://travis-ci.org/olsio/otp-client.svg?branch=master]][https://travis-ci.org/olsio/otp-client]
+[![Build Status][travis-image]][travis-url]
 
 otp-client is a JavaScript library for creating OTP tokens for easy use in OTP clients.
 
