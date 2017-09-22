@@ -1,0 +1,12 @@
+.DS_Store
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.travis.yml
+
+coverage
+node_modules
+node_modules-*
+src
+webpack.config.babel.js
