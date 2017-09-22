@@ -1,7 +1,8 @@
 {
   "name": "otp-client",
   "version": "0.0.1",
-  "description": "OTP client library",
+  "description":
+    "JavaScript library for creating OTP tokens for easy use in OTP clients",
   "main": "dist/otp-client.js",
   "license": "MIT",
   "keywords": [
@@ -20,10 +21,14 @@
     "type": "git",
     "url": "https://github.com/olsio/otp-client.git"
   },
+  "bugs": {
+    "url": "https://github.com/olsio/otp-client/issues"
+  },
   "scripts": {
     "build": "webpack",
     "clean": "rimraf dist coverage",
     "lint": "eslint --ext js src",
+    "prepublish": "yarn run lint && yarn run test && yarn run build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
