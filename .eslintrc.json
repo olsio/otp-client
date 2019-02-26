@@ -8,9 +8,7 @@
   },
   "parserOptions": {
     "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+    "ecmaVersion": 2018
   },
   "rules": {
     "no-const-assign": "warn",
