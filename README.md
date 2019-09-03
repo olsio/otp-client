@@ -33,6 +33,7 @@ The token generation can be customized with the following options:
 * **algorithm**: Algorithm used to create the HMAC digest [SHA1, SHA256, SHA512]
 * **digits**: Number of digits of the generated token
 * **period**: Window lenght for the token in seconds
+* **epoch**: Unix Epoch time in milliseconds. If omitted, it defaults to current time
 
 ```js
 import OTP from 'otp-client'
@@ -41,7 +42,8 @@ const secret = "TPQDAHVBZ5NBO5LFEQKC7V7UPATSSMFY"
 const options = {
   algorithm: "sha256",
   digits: 8,
-  period: 20
+  period: 20,
+  epoch: new Date("Tue, 01 Jan 2019 12:00:00 UTC").getTime()
 }
 
 const otp = new OTP(secret, options)
