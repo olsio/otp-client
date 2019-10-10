@@ -1,6 +1,5 @@
 import base32 from 'thirty-two'
 import crypto from 'crypto'
-import leftPad from 'left-pad'
 
 const hexToInt = hex => {
   return parseInt(hex, 16)
@@ -8,7 +7,7 @@ const hexToInt = hex => {
 
 const prepareCounter = counter => {
   const hexCounter = parseInt(counter, 10).toString(16)
-  const paddedCounter = leftPad(hexCounter, 16, 0)
+  const paddedCounter = hexCounter.padStart(16, '0')
   return Buffer.from(paddedCounter, 'hex')
 }
 
@@ -57,7 +56,7 @@ const generateToken = (counter, algorithm, secret, digits) => {
   const truncatedHash = hmac.substr(offset * 2, 8)
   const sigbit0 = hexToInt(truncatedHash) & hexToInt('7fffffff')
   const token = sigbit0 % Math.pow(10, digits)
-  return leftPad(token, digits, 0)
+  return token.toString().padStart(digits, '0')
 }
 
 export { toBase32, generateToken, hexToInt, padSecret, padBuffer }
