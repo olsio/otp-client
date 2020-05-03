@@ -33,21 +33,22 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "moment": "^2.22.2",
+    "moment": "^2.25.1",
+    "otp-client": "^1.0.3",
     "precond": "^0.2.3",
     "thirty-two": "^1.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/preset-env": "^7.1.6",
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.1.0",
-    "babel-loader": "^8.0.4",
-    "eslint": "^5.9.0",
-    "jest": "^24.1.0",
-    "regenerator-runtime": "^0.13.1",
-    "rimraf": "^2.6.2",
+    "babel-jest": "^25.5.1",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.5.4",
+    "regenerator-runtime": "^0.13.5",
+    "rimraf": "^3.0.2",
     "webpack": "3.12.0"
   }
 }
